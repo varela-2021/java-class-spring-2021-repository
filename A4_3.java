@@ -29,11 +29,15 @@ public class A4_3 {
 
 			for (int n = 1; n < num + 1; n++) {
 				square = n * n;
-				sum = square;
+				sum += square;
 			}
-			System.out.printf("The sum of the squares from 1 to %d", num);
+			System.out.print("Enter a number greater than 0 (less than 1 to quit): ");
+			
+			System.out.println();
+			
+			System.out.printf("The sum of the squares from 1 to %d:  ", num);
 
-			System.out.printf(" is %d", sum);
+			System.out.printf(" is %d  ", sum);
 
 			num = scan.nextInt();
 		}
